@@ -495,7 +495,7 @@ video {
   z-index: 1;
   transition: all 0.5s;
   border: 1px solid rgba(255,255,255,0.2);
-  background-color: black;/*rgba(255,255,255,0.1)*/
+  background-color: transparent;/*rgba(255,255,255,0.1)*/
 }
 .btn-two::after {
   content: '';
@@ -507,7 +507,7 @@ video {
   z-index: 1;
   transition: all 0.5s;
   border: 1px solid rgba(255,255,255,0.2);
-  background-color: black;
+  background-color: transparent;
 }
 .btn-two:hover::before {
   transform: rotate(-45deg);
