@@ -319,6 +319,104 @@ div[class*=box] {
       BUTTON ONE
 ========================
 */
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://cdn.glitch.global/a026b2b4-4a54-424c-be93-0942098f9c15/796257a6-4e71-49cf-973f-fd81a30e021b.image.png?v=1693620222199");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  /*background-color: rgb(0,0,0, 0.4); /* Fallback color 
+  background-color: rgba(0,0,0, 0.7);*/ /* Black w/opacity/see-through */
+  /* From https://css.glass */
+/* From https://css.glass */
+/* From https://css.glass */
+/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(81, 74, 74, 0.12);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.3px);
+-webkit-backdrop-filter: blur(5.3px);
+border: 1px solid rgba(81, 74, 74, 0.3);
+  color: white;
+  font-weight: 500;
+  border: 3px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  padding: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('https://i.pinimg.com/564x/55/19/0d/55190d44c986ee06b7890e9508f700fe.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+#polina { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin:2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+
+#polina button { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
 .btn-one {
   color: #FFF;
   transition: all 0.3s;
