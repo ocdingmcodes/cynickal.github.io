@@ -809,12 +809,12 @@ video {
 .new__card {
   position: relative;
   width: 230px;
-  /* Glassmorphism changes */
-  background: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle, semi-transparent border */
+  /* Darker Glassmorphism changes */
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black/dark background (30% opaque) */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Very subtle, light border for definition */
   backdrop-filter: blur(10px); /* The core blur effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  /* End Glassmorphism changes */
+  /* End Darker Glassmorphism changes */
 
   box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1); /* Existing shadow, works well */
   padding: 1rem 1rem 1.5rem;
@@ -823,6 +823,9 @@ video {
   margin-bottom: 4rem;
   overflow: hidden; /* Keep overflow hidden if content might go outside */
   z-index: 1; /* Ensure card is above the overlay */
+
+  /* Optional: Adjust text color for better contrast on a darker background */
+  color: #f0f0f0; /* Light text color for readability */
 }
 
 .new__overlay {
@@ -831,9 +834,8 @@ video {
   /* For glassmorphism to be visible, this overlay should NOT be solid black. */
   /* It should be a background with some visual interest (e.g., a gradient, an image) */
   /* so the blur effect on .new__card has something to blur. */
-  background-color: #333; /* Changed from black to a slightly lighter dark for potential subtle effect */
-  /* Consider a gradient here for better glassmorphism effect, e.g.: */
-  /* background: linear-gradient(135deg, #a8c0ff, #3f2b96); */
+  /* Example: A subtle dark gradient */
+  background: linear-gradient(135deg, #1a1a1a, #333333);
   border-radius: 50%;
   position: absolute;
   top: -5rem;
@@ -853,12 +855,16 @@ video {
   font-size: var(--h2-font-size);
   position: relative; /* Ensure text is above the overlay */
   z-index: 1;
+  /* Optional: Adjust color if var(--h2-font-size) is too dark */
+  /* color: #ffffff; */
 }
 
 .new__title {
   font-weight: var(--font-medium);
   position: relative; /* Ensure text is above the overlay */
   z-index: 1;
+  /* Optional: Adjust color if var(--font-medium) is too dark */
+  /* color: #ffffff; */
 }
 
 .new__button {
@@ -869,6 +875,9 @@ video {
   right: 0;
   bottom: 0;
   z-index: 1; /* Ensure button is above the overlay */
+  /* You might want to adjust button background/text color for dark glassmorphism */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* color: #f0f0f0; */
 }
 
 .new__icon {
@@ -881,11 +890,11 @@ video {
 
 /*Class Swiper*/
 .swiper-pagination-bullet {
-  background-color: var(--text-color);
+  background-color: var(--text-color); /* Ensure this is visible on dark background */
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #6c94c4;
+  background-color: #6c94c4; /* This color should still stand out */
 }
 
 /*=============== MESSAGE ===============*/
